@@ -8,7 +8,6 @@ from home.restAPI.facebookAPI import check_ad
 def home(request):
     return render(request, 'home/layout.html')
 
-
 def check(request):
     token = request.GET['token']
     check_data = check_ad(token)
