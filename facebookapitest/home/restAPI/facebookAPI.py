@@ -14,10 +14,15 @@ from facebook_business.adobjects.adcreative import AdCreative
 
 import logging
 
+
 log = logging.getLogger('app')
 
+
 fields = [
-    Ad.Field.name, Ad.Field.ad_review_feedback, Ad.Field.effective_status, Ad.Field.status
+    Ad.Field.name, 
+    Ad.Field.ad_review_feedback, 
+    Ad.Field.effective_status, 
+    Ad.Field.status
 ]
 params = {
     Ad.Field.effective_status:
